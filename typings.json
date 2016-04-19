@@ -1,0 +1,16 @@
+{
+  "name": "twit",
+  "main": "index.d.ts",
+  "homepage": "https://github.com/ttezel/twit",
+  "version": "",
+  "devDependencies": {
+    "blue-tape": "registry:npm/blue-tape#0.1.0+20160322235613"
+  },
+  "ambientDevDependencies": {
+    "geojson": "registry:dt/geojson#0.0.0+20160319143602",
+    "node": "registry:dt/node#4.0.0+20160319033040"
+  },
+  "dependencies": {
+    "es6-promise": "registry:npm/es6-promise#3.0.0+20160211003958"
+  }
+}
