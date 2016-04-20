@@ -1,5 +1,6 @@
 import { IncomingMessage } from 'http';
 import { Promise } from 'es6-promise';
+import { Readable } from 'stream';
 
 declare namespace Twit {
   export type StreamEndpoint = 'statuses/filter' | 'statuses/sample' | 'statuses/firehose' | 'user' | 'site';
@@ -266,7 +267,7 @@ declare class Twit {
   setAuth( tokens: Twit.ConfigKeys )
 
   // See https://github.com/ttezel/twit#tstreampath-params
-  stream( path: Twit.StreamEndpoint, params?: Twit.Params ): NodeJS.ReadableStream;
+  stream( path: Twit.StreamEndpoint, params?: Twit.Params ): Readable;
 }
 
 export = Twit;
