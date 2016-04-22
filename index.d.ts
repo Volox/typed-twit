@@ -225,11 +225,11 @@ declare namespace Twit {
     status?: string,
   }
   export interface PromiseResponse {
-    data: Response,
+    data: Response | any,
     responde: IncomingMessage,
   }
   export interface Callback {
-    ( err: Error, result: Response, response: IncomingMessage ): void
+    ( err: Error, result: Response | any, response: IncomingMessage ): void
   }
   export interface ConfigKeys {
     consumer_key: string,
