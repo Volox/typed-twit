@@ -249,22 +249,22 @@ declare class Twit {
   constructor( config: Twit.Options );
 
   // See https://github.com/ttezel/twit#tgetpath-params-callback
-  get( path: string, callback: Twit.Callback );
-  get( path: string, params: Twit.Params, callback: Twit.Callback );
+  get( path: string, callback: Twit.Callback ): void;
+  get( path: string, params: Twit.Params, callback: Twit.Callback ): void;
   get( path: string, params?: Twit.Params ): Promise<Twit.PromiseResponse>;
 
   // See https://github.com/ttezel/twit#tpostpath-params-callback
-  post( path: string, callback: Twit.Callback );
-  post( path: string, params: Twit.Params, callback: Twit.Callback );
+  post( path: string, callback: Twit.Callback ): void;
+  post( path: string, params: Twit.Params, callback: Twit.Callback ): void;
   post( path: string, params?: Twit.Params ): Promise<Twit.PromiseResponse>;
 
   // See https://github.com/ttezel/twit#tpostmediachunkedparams-callback
-  postMediaChunked( media: Twit.MediaParam, callback: Twit.Callback );
+  postMediaChunked( media: Twit.MediaParam, callback: Twit.Callback ): void;
 
   // See https://github.com/ttezel/twit#tgetauth
   getAuth(): Twit.Options
   // See https://github.com/ttezel/twit#tsetauthtokens
-  setAuth( tokens: Twit.ConfigKeys )
+  setAuth( tokens: Twit.ConfigKeys ): void;
 
   // See https://github.com/ttezel/twit#tstreampath-params
   stream( path: Twit.StreamEndpoint, params?: Twit.Params ): Readable;
