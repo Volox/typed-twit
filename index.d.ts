@@ -223,6 +223,7 @@ declare namespace Twit {
     id?: string,
     slug?: string,
     status?: string,
+    text?: string;
   }
   export interface PromiseResponse {
     data: Response | any,
