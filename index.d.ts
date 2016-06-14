@@ -243,6 +243,10 @@ declare namespace Twit {
     timeout_ms?: number,
     trusted_cert_fingerprints?: string[],
   }
+  export interface Stream extends Readable {
+    start: ()=>void;
+    stop: ()=>void;
+  }
 }
 
 declare class Twit {
