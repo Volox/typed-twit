@@ -12,6 +12,7 @@
     "lint+build+test": "npm run lint && npm run build+test",
     "prepublish": "typings install"
   },
+  "typings": "index.d.ts",
   "devDependencies": {
     "blue-tape": "^0.2.0",
     "onchange": "^2.2.0",
